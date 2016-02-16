@@ -9,6 +9,10 @@ def get_page(url):
 	# print 'Response Status Code for ' + str(url) + ': ' + str(response.getcode())
 	return page
 
+file = open("feats.txt", 'w')
+file.write("this is only a test.")
+file.close()
+
 core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats.html"
 
-print get_page(core_feats_url)
+# print get_page(core_feats_url)
