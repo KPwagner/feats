@@ -1,1 +1,9 @@
-this is only a test.
+var feats = {
+	"%feat%" : {
+		"name": "%name%",
+		"featPrerequisites": %featPrerequisites%,
+		"nonFeatPrerequisites": %nonFeatPrerequisites%,
+		"buildsInto": %buildsInto%,
+		"benefitsShort": "%buildsInto%"
+	},
+}
