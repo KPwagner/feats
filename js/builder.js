@@ -9,7 +9,10 @@ $(function(){
 			var id, name, nonFeatPrerequisites, benefitsShort, formattedFeat;
 			id = feat;
 			name = feats[feat]["name"];
-			nonFeatPrerequisites = feats[feat]["nonFeatPrerequisites"][0];
+			nonFeatPrerequisites = feats[feat]["nonFeatPrerequisites"];
+			if (nonFeatPrerequisites == false) {
+				nonFeatPrerequisites = "No Prerequisites";
+			}
 			benefitsShort = feats[feat]["benefitsShort"];
 
 			formattedFeat = featDiv
