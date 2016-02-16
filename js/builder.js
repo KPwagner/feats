@@ -1,17 +1,28 @@
 $(function(){
-	var featDiv = "<div class='feat'><h2>%name%</h2><p>%prerequisites%</p><p>%benefitsShort%</p></div>"
+	var featDiv = "<div class='feat' id='%id%'><h2>%name%</h2><p>%nonFeatPrerequisites%</p><p>%benefitsShort%</p></div>"
+	var buildLink = '<a href="">See Build Path</a>'
+
+
 
 	for (feat in feats) {
-		var name, prerequisites, benefitsShort, formattedFeat;
-		name = feats[feat]["name"];
-		prerequisites = feats[feat]["prerequisites"];
-		benefitsShort = feats[feat]["benefitsShort"];
+		if (feats[feat]["featPrerequisites"] == false) {
+			var id, name, nonFeatPrerequisites, benefitsShort, formattedFeat;
+			id = feat;
+			name = feats[feat]["name"];
+			nonFeatPrerequisites = feats[feat]["nonFeatPrerequisites"][0];
+			benefitsShort = feats[feat]["benefitsShort"];
 
-		formattedFeat = featDiv
-		.replace("%name%", feats[feat]["name"])
-		.replace("%prerequisites%", feats[feat]["prerequisites"])
-		.replace("%benefitsShort%", feats[feat]["benefitsShort"]);
+			formattedFeat = featDiv
+			.replace("%id%", id)
+			.replace("%name%", name)
+			.replace("%nonFeatPrerequisites%", nonFeatPrerequisites)
+			.replace("%benefitsShort%", benefitsShort);
 
-		$("#main").append(formattedFeat);
+			$("#main").append(formattedFeat);
+
+			if (feats[feat]["buildsInto"][0]) {
+				$("#"+id).append(buildLink);
+			}
+		}
 	}
 });
