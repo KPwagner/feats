@@ -27,7 +27,6 @@ def get_next_feat(page):
 	display_name_start = page.find('>', page.find('<td><a')+8)+1
 	display_name_end = page.find('<', display_name_start)
 	display_name = page[display_name_start:display_name_end].lstrip('&nbsp;')
-	print display_name
 
 	reference_name = display_name.replace(',','').split()
 	if len(reference_name) == 1:
@@ -84,29 +83,33 @@ def get_next_feat(page):
 				prerequisites_data_all = re.sub(r'<a.*?>|</a>','',prerequisites_data_all)
 				non_feat_prerequisites.append(prerequisites_data_all)
 				prerequisites_data_all = ''
+	page = page[prerequisites_data_end:]
 
-	benefits_short = ''
+	benefits_short_start = page.find('>',page.find('<td')+8)+1
+	benefits_short_end = page.find('</td>',benefits_short_start)
+	benefits_short = page[benefits_short_start:benefits_short_end]
+	benefits_short = re.sub(r'<a.*?>|</a>','',benefits_short)
 	page = page[page.find('<tr>', display_name_end):]
-	return reference_name, display_name, feat_prerequisites, non_feat_prerequisites, page
+	return reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page
 
 def get_some_feats(page, n):
 	feats = []
 	i = 0
 	while i < n:
-		reference_name, display_name, feat_prerequisites, non_feat_prerequisites, page = get_next_feat(page)
-		new_feat = Feat(reference_name, display_name, feat_prerequisites, non_feat_prerequisites)
+		reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page = get_next_feat(page)
+		new_feat = Feat(reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short)
 		feats.append(new_feat)
 		i += 1
 	return feats
 
 def print_feats(feats):
 	for feat in feats:
-		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites
+		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.benefits_short
 
 core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats.html"
 core_feats_page = get_page(core_feats_url)
 
-print_feats(get_some_feats(core_feats_page, 200))
+print_feats(get_some_feats(core_feats_page, 20))
 
 
 
