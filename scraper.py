@@ -5,14 +5,15 @@ class Feat:
 	def __init__(self,
 		reference_name='',
 		display_name='',
-		feat_prerequisites='',
-		non_feat_prerequisites='',
-		builds_into='',
+		feat_prerequisites=[],
+		non_feat_prerequisites=[],
+		builds_into=[],
 		benefits_short=''):
 		self.reference_name = reference_name
 		self.display_name = display_name
 		self.feat_prerequisites = feat_prerequisites
 		self.non_feat_prerequisites = non_feat_prerequisites
+		self.builds_into = builds_into
 		self.benefits_short = benefits_short
 
 def get_page(url):
@@ -55,26 +56,26 @@ def get_next_feat(page):
 				prereq_end = prerequisites_data_all.find('</a>',prereq_start)
 				prereq_all = prerequisites_data_all[prereq_start:prereq_end]
 				if len(prereq_all) > 3:
-					#prerequisite is a feat
+					# prerequisite is a feat
 					feat_prerequisites.append(prereq_all)
 					next_prerequisite = prerequisites_data_all.find(',', prereq_end)
 					if next_prerequisite == -1:
-						#this was the last prerequisite
+						# this was the last prerequisite
 						prerequisites_data_all = ''
 					else:
-						#there is at least one more prerequisite
+						# there is at least one more prerequisite
 						prerequisites_data_all = prerequisites_data_all[next_prerequisite:]
 				else:
-					#prerequisite is an ability
+					# prerequisite is an ability
 					next_prerequisite = prerequisites_data_all.find(',')
 					if next_prerequisite == -1:
-						#prerequisite is the only one
+						# prerequisite is the only one
 						prereq_all = prerequisites_data_all[prereq_start:]
 						prereq_all = prereq_all.replace('</a>','')
 						non_feat_prerequisites.append(prereq_all)
 						prerequisites_data_all = ''
 					else:
-						#there is at least on more prerequisite
+						# there is at least on more prerequisite
 						prereq_all = prerequisites_data_all[prereq_start:prerequisites_data_all.find(',')]
 						prereq_all = prereq_all.replace('</a>','')
 						non_feat_prerequisites.append(prereq_all)
@@ -93,34 +94,38 @@ def get_next_feat(page):
 	page = page[page.find('<tr>', display_name_end):]
 	return reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page
 
+
 def get_some_feats(page, n):
 	feats = []
 	i = 0
 	while i < n:
 		reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page = get_next_feat(page)
-		new_feat = Feat(reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short)
+		new_feat = Feat(reference_name=reference_name,
+			display_name=display_name,
+			feat_prerequisites=feat_prerequisites,
+			non_feat_prerequisites=non_feat_prerequisites,
+			benefits_short=benefits_short)
 		feats.append(new_feat)
 		i += 1
-	return feats
-
-def assign_feat_builds(feats):
-	for feat in feats:
+	# adds proper 'builds_into' list
+	for i, feat in enumerate(feats):
 		builds_into = []
 		feat_display_name = feat.display_name
 		for feat in feats:
 			if feat_display_name in feat.feat_prerequisites:
 				builds_into.append(feat.reference_name)
-		print feat_display_name, builds_into
+		feats[i].builds_into = builds_into
+	return feats
 
 def print_feats(feats):
 	for feat in feats:
-		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.benefits_short
+		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.builds_into, feat.benefits_short
 
 core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats.html"
 core_feats_page = get_page(core_feats_url)
 
-assign_feat_builds(get_some_feats(core_feats_page,50))
-# print_feats(get_some_feats(core_feats_page, 20))
+feats = get_some_feats(core_feats_page,20)
+print_feats(feats)
 
 
 feat_template = """
