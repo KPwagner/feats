@@ -7,6 +7,7 @@ class Feat:
 		display_name='',
 		feat_prerequisites='',
 		non_feat_prerequisites='',
+		builds_into='',
 		benefits_short=''):
 		self.reference_name = reference_name
 		self.display_name = display_name
@@ -102,6 +103,15 @@ def get_some_feats(page, n):
 		i += 1
 	return feats
 
+def assign_feat_builds(feats):
+	for feat in feats:
+		builds_into = []
+		feat_display_name = feat.display_name
+		for feat in feats:
+			if feat_display_name in feat.feat_prerequisites:
+				builds_into.append(feat.reference_name)
+		print feat_display_name, builds_into
+
 def print_feats(feats):
 	for feat in feats:
 		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.benefits_short
@@ -109,10 +119,8 @@ def print_feats(feats):
 core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats.html"
 core_feats_page = get_page(core_feats_url)
 
-print_feats(get_some_feats(core_feats_page, 20))
-
-
-
+assign_feat_builds(get_some_feats(core_feats_page,50))
+# print_feats(get_some_feats(core_feats_page, 20))
 
 
 feat_template = """
