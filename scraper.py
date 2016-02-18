@@ -26,11 +26,15 @@ def get_page(url):
 	return page
 
 def get_next_feat(page):
-	display_name_start = page.find('" >', page.find('<td')+8)+3
-	display_name_end = page.find('<', display_name_start)
-	display_name = page[display_name_start:display_name_end].lstrip('&nbsp;')
+	display_name_start = page.find('>', page.find('<td'))+1
+	display_name_end = page.find('</t', display_name_start)
+	display_name = page[display_name_start:display_name_end]
+	display_name = re.sub(r'<a.*?>|</a>|\*','',display_name)
+	display_name = display_name.lstrip('&nbsp;')
+	print display_name_start, display_name_end
 	if display_name_start > 200:
 		return None
+	reference_name = ''
 	reference_name = display_name.replace(',','').split()
 	if len(reference_name) == 1:
 		reference_name = ''.join(reference_name).lower()
@@ -43,7 +47,7 @@ def get_next_feat(page):
 	feat_prerequisites = []
 	non_feat_prerequisites = []
 	prerequisites_data_start = page.find('>', page.find('<td'))+1
-	prerequisites_data_end = page.find('</td>', prerequisites_data_start)
+	prerequisites_data_end = page.find('</t', prerequisites_data_start)
 	prerequisites_data_all = page[prerequisites_data_start:prerequisites_data_end]
 	if prerequisites_data_all == '&mdash;':
 		# no prerequisites
@@ -131,7 +135,7 @@ core_feats_page = get_page(core_feats_url)
 apg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedClassGuide/feats.html"
 apg_feats_page = get_page(apg_feats_url)
 
-feats = get_some_feats(core_feats_page)
+feats = get_some_feats(core_feats_page, 10)
 print_feats(feats)
 
 
