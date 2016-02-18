@@ -31,8 +31,8 @@ def get_next_feat(page):
 	display_name = page[display_name_start:display_name_end]
 	display_name = re.sub(r'<a.*?>|</a>|\*','',display_name)
 	display_name = display_name.lstrip('&nbsp;')
-	print display_name_start, display_name_end
-	if display_name_start > 200:
+	print display_name_start, display_name_end, display_name
+	if (display_name_start > 200 or display_name_end - display_name_start > 100):
 		return None
 	reference_name = ''
 	reference_name = display_name.replace(',','').split()
@@ -135,7 +135,7 @@ core_feats_page = get_page(core_feats_url)
 apg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedClassGuide/feats.html"
 apg_feats_page = get_page(apg_feats_url)
 
-feats = get_some_feats(core_feats_page, 10)
+feats = get_some_feats(core_feats_page)
 print_feats(feats)
 
 
