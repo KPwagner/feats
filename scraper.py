@@ -26,10 +26,11 @@ def get_page(url):
 	return page
 
 def get_next_feat(page):
-	display_name_start = page.find('>', page.find('<td><a')+8)+1
+	display_name_start = page.find('" >', page.find('<td')+8)+3
 	display_name_end = page.find('<', display_name_start)
 	display_name = page[display_name_start:display_name_end].lstrip('&nbsp;')
-
+	if display_name_start > 200:
+		return None
 	reference_name = display_name.replace(',','').split()
 	if len(reference_name) == 1:
 		reference_name = ''.join(reference_name).lower()
@@ -87,19 +88,22 @@ def get_next_feat(page):
 				prerequisites_data_all = ''
 	page = page[prerequisites_data_end:]
 
-	benefits_short_start = page.find('>',page.find('<td')+8)+1
+	benefits_short_start = page.find('>',page.find('<td')+3)+1
 	benefits_short_end = page.find('</td>',benefits_short_start)
 	benefits_short = page[benefits_short_start:benefits_short_end]
 	benefits_short = re.sub(r'<a.*?>|</a>','',benefits_short)
-	page = page[page.find('<tr>', display_name_end):]
+	page = page[benefits_short_end:]
 	return reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page
 
 
-def get_some_feats(page, n):
+def get_some_feats(page, max_iterations=1000):
 	feats = []
 	i = 0
-	while i < n:
-		reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page = get_next_feat(page)
+	while i < max_iterations:
+		next_feat = get_next_feat(page)
+		if next_feat == None:
+			break
+		reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page = next_feat
 		new_feat = Feat(reference_name=reference_name,
 			display_name=display_name,
 			feat_prerequisites=feat_prerequisites,
@@ -124,7 +128,10 @@ def print_feats(feats):
 core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats.html"
 core_feats_page = get_page(core_feats_url)
 
-feats = get_some_feats(core_feats_page,20)
+apg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedClassGuide/feats.html"
+apg_feats_page = get_page(apg_feats_url)
+
+feats = get_some_feats(core_feats_page)
 print_feats(feats)
 
 
