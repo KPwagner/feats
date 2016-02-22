@@ -29,10 +29,11 @@ def get_next_feat(page):
 	display_name_start = page.find('>', page.find('<td'))+1
 	display_name_end = page.find('</t', display_name_start)
 	display_name = page[display_name_start:display_name_end]
+	print display_name_start, display_name_end, display_name
 	display_name = re.sub(r'<a.*?>|</a>|\*','',display_name)
 	display_name = display_name.lstrip('&nbsp;')
-	print display_name_start, display_name_end, display_name
-	if (display_name_start > 200 or display_name_end - display_name_start > 100 or display_name_end == -1 or len(display_name) > 50):
+	# display_name_start > 200 or display_name_end - display_name_start > 100 or
+	if (display_name_start > 200 or display_name_end == -1 or len(display_name) > 50):
 		return None
 	reference_name = ''
 	reference_name = display_name.replace(',','').split()
@@ -95,10 +96,9 @@ def get_next_feat(page):
 	benefits_short_start = page.find('>',page.find('<td')+3)+1
 	benefits_short_end = page.find('</td>',benefits_short_start)
 	benefits_short = page[benefits_short_start:benefits_short_end]
-	benefits_short = re.sub(r'<a.*?>|</a>','',benefits_short)
+	benefits_short = re.sub(r'<a.*?>|</a>|<i>|</i>','',benefits_short)
 	page = page[benefits_short_end:]
 	return reference_name, display_name, feat_prerequisites, non_feat_prerequisites, benefits_short, page
-
 
 def get_some_feats(page, max_iterations=1000):
 	feats = []
@@ -125,6 +125,15 @@ def get_some_feats(page, max_iterations=1000):
 		feats[i].builds_into = builds_into
 	return feats
 
+def get_all_feats(url_list):
+	feats = []
+	for url in url_list:
+		page = get_page(url)
+		feats_list = get_some_feats(page)
+		for feat in feats_list:
+			feats.append(feat)
+	return feats
+
 def print_feats(feats):
 	for feat in feats:
 		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.builds_into, feat.benefits_short
@@ -138,7 +147,10 @@ apg_feats_page = get_page(apg_feats_url)
 acg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedClassGuide/feats.html"
 acg_feats_page = get_page(acg_feats_url)
 
-feats = get_some_feats(apg_feats_page)
+# feats = get_some_feats(core_feats_page)
+
+urls = [core_feats_url, apg_feats_url, acg_feats_url]
+feats = get_all_feats(urls)
 print_feats(feats)
 
 
