@@ -29,7 +29,7 @@ def get_next_feat(page):
 	display_name_start = page.find('>', page.find('<td'))+1
 	display_name_end = page.find('</t', display_name_start)
 	display_name = page[display_name_start:display_name_end]
-	print display_name_start, display_name_end, display_name
+	# print display_name_start, display_name_end, display_name
 	display_name = re.sub(r'<a.*?>|</a>|\*','',display_name)
 	display_name = display_name.lstrip('&nbsp;')
 	# display_name_start > 200 or display_name_end - display_name_start > 100 or
@@ -54,6 +54,7 @@ def get_next_feat(page):
 		# no prerequisites
 		pass
 	else:
+		"""
 		while prerequisites_data_all:
 			prerequisites_data_all = prerequisites_data_all.lstrip(', ')
 			if prerequisites_data_all.find('<a', 0, 3) != -1:
@@ -91,6 +92,8 @@ def get_next_feat(page):
 				prerequisites_data_all = re.sub(r'<a.*?>|</a>','',prerequisites_data_all)
 				non_feat_prerequisites.append(prerequisites_data_all)
 				prerequisites_data_all = ''
+		"""
+		non_feat_prerequisites.append(prerequisites_data_all)
 	page = page[prerequisites_data_end:]
 
 	benefits_short_start = page.find('>',page.find('<td')+3)+1
@@ -138,6 +141,13 @@ def print_feats(feats):
 	for feat in feats:
 		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.builds_into, feat.benefits_short
 
+def write_feats(feats):
+	file = open("feats.txt", 'w')
+	for feat in feats:
+		# feat_text = feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.builds_into, feat.benefits_short
+		file.write((feat.non_feat_prerequisites[0] if feat.non_feat_prerequisites  else "No Prerequisites") + '\n')
+	file.close()
+
 core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats.html"
 core_feats_page = get_page(core_feats_url)
 
@@ -151,8 +161,8 @@ acg_feats_page = get_page(acg_feats_url)
 
 urls = [core_feats_url, apg_feats_url, acg_feats_url]
 feats = get_all_feats(urls)
-print_feats(feats)
-
+# print_feats(feats)
+write_feats(feats)
 
 feat_template = """
 	"%feat%" : {
@@ -165,6 +175,4 @@ feat_template = """
 """
 feats_json = "var feats = {" + feat_template + "}"
 
-# file = open("feats.txt", 'w')
-# file.write(feats_json)
-# file.close()
+
