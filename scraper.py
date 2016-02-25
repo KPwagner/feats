@@ -1,5 +1,6 @@
 import urllib2
 import re
+import json
 
 bad_feats = ['Armor Proficiency, Light', 'Armor Proficiency, Medium']
 
@@ -138,38 +139,32 @@ def print_feats(feats):
 		print feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.builds_into, feat.benefits_short
 
 def write_feats(feats):
-	file = open("feats.txt", 'w')
-	for feat in feats:
-		# feat_text = feat.reference_name, feat.display_name, feat.feat_prerequisites, feat.non_feat_prerequisites, feat.builds_into, feat.benefits_short
-		file.write((feat.non_feat_prerequisites[0] if feat.non_feat_prerequisites  else "No Prerequisites") + '\n')
+	file = open("js/feats.js", 'w')
+	file.write("var feats = {\n")
+	for i, feat in enumerate(feats):
+		feat_data = dict(
+			name=feat.display_name,
+			featPrerequisites=feat.feat_prerequisites,
+			nonFeatPrerequisites=feat.non_feat_prerequisites,
+			buildsInto=feat.builds_into,
+			benefitsShort=feat.benefits_short)
+		formatted_feat_data = json.dumps(feat_data, sort_keys=True, indent=4, separators=(',', ': '))
+		if i > 0:
+			file.write(',\n"' + feat.reference_name + '" : ')
+		else:
+			file.write('"' + feat.reference_name + '" : ')
+		file.write(formatted_feat_data)
+	file.write("}")
 	file.close()
 
 core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats"
-# core_feats_page = get_page(core_feats_url)
-
 apg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedPlayersGuide/advancedFeats"
-# apg_feats_page = get_page(apg_feats_url)
-
 acg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedClassGuide/feats"
-# acg_feats_page = get_page(acg_feats_url)
 
-# feats = get_some_feats(core_feats_page)
 
 urls = [core_feats_url, apg_feats_url, acg_feats_url]
 feats = get_all_feats(urls)
-# feats[5].non_feat_prerequisites = ['test']
-print_feats(feats)
-# write_feats(feats)
-
-feat_template = """
-	"%feat%" : {
-		"name": "%name%",
-		"featPrerequisites": %featPrerequisites%,
-		"nonFeatPrerequisites": %nonFeatPrerequisites%,
-		"buildsInto": %buildsInto%,
-		"benefitsShort": "%buildsInto%"
-	},
-"""
-feats_json = "var feats = {" + feat_template + "}"
+# print_feats(feats)
+write_feats(feats)
 
 
