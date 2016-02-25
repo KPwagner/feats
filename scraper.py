@@ -1,6 +1,8 @@
 import urllib2
 import re
 
+bad_feats = ['Armor Proficiency, Light', 'Armor Proficiency, Medium']
+
 class Feat:
 	def __init__(self,
 		reference_name='',
@@ -22,7 +24,7 @@ def get_page(url):
 	page = response.read()
 	start = page.find('</thead>')
 	page = page[start:]
-	# print 'Response Status Code for ' + str(url) + ': ' + str(response.getcode())
+	print 'Response Status Code for ' + str(url) + ': ' + str(response.getcode())
 	return page
 
 def get_next_feat(page):
@@ -54,46 +56,8 @@ def get_next_feat(page):
 		# no prerequisites
 		pass
 	else:
-		"""
-		while prerequisites_data_all:
-			prerequisites_data_all = prerequisites_data_all.lstrip(', ')
-			if prerequisites_data_all.find('<a', 0, 3) != -1:
-				# prerequisites contain a link; either another feat or an ability score
-				prereq_start = prerequisites_data_all.find('>')+1
-				prereq_end = prerequisites_data_all.find('</a>',prereq_start)
-				prereq_all = prerequisites_data_all[prereq_start:prereq_end]
-				if len(prereq_all) > 3:
-					# prerequisite is a feat
-					feat_prerequisites.append(prereq_all)
-					next_prerequisite = prerequisites_data_all.find(',', prereq_end)
-					if next_prerequisite == -1:
-						# this was the last prerequisite
-						prerequisites_data_all = ''
-					else:
-						# there is at least one more prerequisite
-						prerequisites_data_all = prerequisites_data_all[next_prerequisite:]
-				else:
-					# prerequisite is an ability
-					next_prerequisite = prerequisites_data_all.find(',')
-					if next_prerequisite == -1:
-						# prerequisite is the only one
-						prereq_all = prerequisites_data_all[prereq_start:]
-						prereq_all = prereq_all.replace('</a>','')
-						non_feat_prerequisites.append(prereq_all)
-						prerequisites_data_all = ''
-					else:
-						# there is at least on more prerequisite
-						prereq_all = prerequisites_data_all[prereq_start:prerequisites_data_all.find(',')]
-						prereq_all = prereq_all.replace('</a>','')
-						non_feat_prerequisites.append(prereq_all)
-						prerequisites_data_all = prerequisites_data_all[next_prerequisite:]
-			else:
-				# prerequisites do not contain a link; something other than a feat or ability score
-				prerequisites_data_all = re.sub(r'<a.*?>|</a>','',prerequisites_data_all)
-				non_feat_prerequisites.append(prerequisites_data_all)
-				prerequisites_data_all = ''
-		"""
 		non_feat_prerequisites.append(prerequisites_data_all)
+
 	page = page[prerequisites_data_end:]
 
 	benefits_short_start = page.find('>',page.find('<td')+3)+1
@@ -118,7 +82,47 @@ def get_some_feats(page, max_iterations=1000):
 			benefits_short=benefits_short)
 		feats.append(new_feat)
 		i += 1
-	# adds proper 'builds_into' list
+	return feats
+
+def get_all_feats(url_list):
+	feats = []
+	feat_names = []
+	for url in url_list:
+		page = get_page(url)
+		feats_list = get_some_feats(page)
+		for feat in feats_list:
+			feats.append(feat)
+	for feat in feats:
+		feat_names.append(feat.display_name)
+	for feat_index, feat in enumerate(feats):
+		prerequisites = []
+		feat_prerequisites = []
+		non_feat_prerequisites = []
+		if feat.non_feat_prerequisites:
+			#removing <a> tags
+			all_prerequisites = re.sub(r'<a.*?>|</a>|\*','',feat.non_feat_prerequisites[0])
+			for bad_feat_index, bad_feat in enumerate(bad_feats):
+				#check if all_prerequisites contains a "bad feat"
+				if all_prerequisites.find(bad_feats[bad_feat_index]) == -1:
+					pass
+				else:
+					#adds proper "bad feat" to list and removes from all_prereq string
+					prerequisites.append(bad_feats[bad_feat_index])
+					all_prerequisites = all_prerequisites.replace(bad_feats[bad_feat_index], '')
+			if all_prerequisites:
+				all_prerequisites_list = all_prerequisites.split(', ')
+				for pre in all_prerequisites_list:
+					if pre:
+						prerequisites.append(pre)
+		for pre in prerequisites:
+			if pre in feat_names:
+				feat_prerequisites.append(pre)
+			else:
+				non_feat_prerequisites.append(pre)
+
+		feats[feat_index].feat_prerequisites = feat_prerequisites
+		feats[feat_index].non_feat_prerequisites = non_feat_prerequisites
+
 	for i, feat in enumerate(feats):
 		builds_into = []
 		feat_display_name = feat.display_name
@@ -126,15 +130,7 @@ def get_some_feats(page, max_iterations=1000):
 			if feat_display_name in feat.feat_prerequisites:
 				builds_into.append(feat.reference_name)
 		feats[i].builds_into = builds_into
-	return feats
 
-def get_all_feats(url_list):
-	feats = []
-	for url in url_list:
-		page = get_page(url)
-		feats_list = get_some_feats(page)
-		for feat in feats_list:
-			feats.append(feat)
 	return feats
 
 def print_feats(feats):
@@ -148,21 +144,22 @@ def write_feats(feats):
 		file.write((feat.non_feat_prerequisites[0] if feat.non_feat_prerequisites  else "No Prerequisites") + '\n')
 	file.close()
 
-core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats.html"
-core_feats_page = get_page(core_feats_url)
+core_feats_url = "http://paizo.com/pathfinderRPG/prd/coreRulebook/feats"
+# core_feats_page = get_page(core_feats_url)
 
-apg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedPlayersGuide/advancedFeats.html"
-apg_feats_page = get_page(apg_feats_url)
+apg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedPlayersGuide/advancedFeats"
+# apg_feats_page = get_page(apg_feats_url)
 
-acg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedClassGuide/feats.html"
-acg_feats_page = get_page(acg_feats_url)
+acg_feats_url = "http://paizo.com/pathfinderRPG/prd/advancedClassGuide/feats"
+# acg_feats_page = get_page(acg_feats_url)
 
 # feats = get_some_feats(core_feats_page)
 
 urls = [core_feats_url, apg_feats_url, acg_feats_url]
 feats = get_all_feats(urls)
-# print_feats(feats)
-write_feats(feats)
+# feats[5].non_feat_prerequisites = ['test']
+print_feats(feats)
+# write_feats(feats)
 
 feat_template = """
 	"%feat%" : {

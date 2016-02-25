@@ -3,468 +3,88 @@ No Prerequisites
 No Prerequisites
 Channel energy class feature
 No Prerequisites
-<a href ="#armor-proficiency-light" >Armor Proficiency, Light</a>, caster level 3rd
-<a href ="#arcane-armor-training" >Arcane Armor Training</a>, <a href ="#armor-proficiency-medium" >Armor Proficiency, Medium</a>, caster level 7th
+caster level 3rd
+caster level 7th
 Ability to cast arcane spells
 No Prerequisites
-<a href ="#armor-proficiency-light" >Armor Proficiency, Light</a>
-<a href ="#armor-proficiency-medium" >Armor Proficiency, Medium</a>
 No Prerequisites
-<a href ="#spell-focus" >Spell Focus</a> (conjuration)
+No Prerequisites
+No Prerequisites
+Spell Focus (conjuration)
 No Prerequisites
 No Prerequisites
 Channel energy class feature
 No Prerequisites
-<a href="gettingStarted.html#intelligence" >Int</a> 13
-<a href ="#combat-expertise" >Combat Expertise</a>
-<a href ="#improved-disarm" >Improved Disarm</a>, base attack bonus +6
-<a href ="#combat-expertise" >Combat Expertise</a>
-<a href ="#improved-feint" >Improved Feint</a>, base attack bonus +6
-<a href ="#combat-expertise" >Combat Expertise</a>
-<a href ="#improved-trip" >Improved Trip</a>, base attack bonus +6
-<a href="gettingStarted.html#dexterity" >Dex</a> 13, <a href ="#combat-expertise" >Combat Expertise</a>, <a href ="#spring-attack" >Spring Attack</a>, base attack bonus +4
+Int 13
 No Prerequisites
-<a href ="#combat-reflexes" >Combat Reflexes</a>
+base attack bonus +6
+No Prerequisites
+base attack bonus +6
+No Prerequisites
+base attack bonus +6
+Dex 13
+No Prerequisites
+No Prerequisites
 Channel negative energy class feature
 Base attack bonus +9
-<a href ="#critical-focus" >Critical Focus</a>, base attack bonus +11
-<a href ="#critical-focus" >Critical Focus</a>, base attack bonus +15
-Any two <a href ="#critical-feats" >critical feats</a>, 14th-level fighter
-<a href ="#critical-focus" >Critical Focus</a>, base attack bonus +13
-<a href ="#critical-focus" >Critical Focus</a>, base attack bonus +11
-<a href ="#critical-focus" >Critical Focus</a>, base attack bonus +13
-<a href ="#staggering-critical" >Staggering Critical</a>, base attack bonus +17
-<a href ="#critical-focus" >Critical Focus</a>, base attack bonus +13
-<a href ="#tiring-critical" >Tiring Critical</a>, base attack bonus +15
-<a href="gettingStarted.html#dexterity" >Dex</a> 13, base attack bonus +1
+base attack bonus +11
 No Prerequisites
-No Prerequisites
-No Prerequisites
-6th-level fighter
-<a href ="#disruptive" >Disruptive</a>, 10th-level fighter
-<a href="gettingStarted.html#dexterity" >Dex</a> 13
-<a href ="#dodge" >Dodge</a>
-<a href ="#mobility" >Mobility</a>, base attack bonus +4
-<a href="gettingStarted.html#dexterity" >Dex</a> 15, <a href ="#dodge" >Dodge</a>, base attack bonus +6
-<a href="gettingStarted.html#dexterity" >Dex</a> 17, <a href ="#wind-stance" >Wind Stance</a>, base attack bonus +11
-Channel energy class feature
-No Prerequisites
-<a href ="#endurance" >Endurance</a>
-No Prerequisites
-Base attack bonus +1
-Channel energy class feature
-Ki pool class feature
-Lay on hands class feature
-Mercy class feature
-Bardic performance class feature
-Rage class feature
-No Prerequisites
-No Prerequisites
-<a href ="#great-fortitude" >Great Fortitude</a>
-Channel energy class feature
-No Prerequisites
-Proficiency with weapon, base attack bonus +8
-Ability to acquire a familiar, see feat
-No Prerequisites
-No Prerequisites
-<a href="gettingStarted.html#dexterity" >Dex</a> 13, <a href ="#improved-unarmed-strike" >Improved Unarmed Strike</a>
-<a href="gettingStarted.html#dexterity" >Dex</a> 15, <a href ="#deflect-arrows" >Deflect Arrows</a>
-<a href="gettingStarted.html#dexterity" >Dex</a> 13, <a href ="#improved-unarmed-strike" >Improved Unarmed Strike</a>
-<a href ="#improved-grapple" >Improved Grapple</a>, base attack bonus +6
-<a href ="#improved-unarmed-strike" >Improved Unarmed Strike</a>
-<a href ="#scorpion-style" >Scorpion Style</a>, base attack bonus +6
-<a href ="#gorgon-s-fist" >Gorgon's Fist</a>, base attack bonus +11
-<a href="gettingStarted.html#dexterity" >Dex</a> 13, <a href="gettingStarted.html#wisdom" >Wis</a> 13, <a href ="#improved-unarmed-strike" >Improved Unarmed Strike</a>, base attack bonus +8
-<a href ="#catch-off-guard" >Catch Off-Guard</a> or <a href ="#throw-anything" >Throw Anything</a>, base attack bonus +8
-No Prerequisites
-No Prerequisites
-<a href ="#iron-will" >Iron Will</a>
-Character level 7th
-No Prerequisites
-<a href ="#lightning-reflexes" >Lightning Reflexes</a>
-Base attack bonus +6
-No Prerequisites
-No Prerequisites
-5 ranks in any Craft or Profession skill
-<a href="skills/ride.html#ride" >Ride</a> 1 rank
-<a href ="#mounted-combat" >Mounted Combat</a>
-<a href ="#mounted-combat" >Mounted Combat</a>
-<a href ="#ride-by-attack" >Ride-By Attack</a>
-<a href ="#mounted-combat" >Mounted Combat</a>
-<a href ="#improved-bull-rush" >Improved Bull Rush</a>, <a href ="#mounted-combat" >Mounted Combat</a>
-<a href="gettingStarted.html#wisdom" >Wis</a> 13, wild shape class feature
-<a href="gettingStarted.html#dexterity" >Dex</a> 13
-<a href="gettingStarted.html#dexterity" >Dex</a> 15, <a href ="#nimble-moves" >Nimble Moves</a>
-No Prerequisites
-No Prerequisites
-<a href ="#point-blank-shot" >Point-Blank Shot</a>
-<a href ="#point-blank-shot" >Point-Blank Shot</a>
-<a href="gettingStarted.html#dexterity" >Dex</a> 19, <a href ="#precise-shot" >Precise Shot</a>, base attack bonus +11
-<a href ="#improved-precise-shot" >Improved Precise Shot</a>, base attack bonus +16
-<a href="gettingStarted.html#dexterity" >Dex</a> 13, <a href ="#mobility" >Mobility</a>, <a href ="#point-blank-shot" >Point-Blank Shot</a>, base attack bonus +4
-<a href="gettingStarted.html#dexterity" >Dex</a> 13, <a href ="#point-blank-shot" >Point-Blank Shot</a>
-<a href="gettingStarted.html#dexterity" >Dex</a> 17, <a href ="#rapid-shot" >Rapid Shot</a>, base attack bonus +6
-<a href="gettingStarted.html#strength" >Str</a> 13, base attack bonus +1
-<a href ="#power-attack" >Power Attack</a>
-<a href ="#cleave" >Cleave</a>, base attack bonus +4
-<a href ="#power-attack" >Power Attack</a>
-<a href ="#improved-bull-rush" >Improved Bull Rush</a>, base attack bonus +6
-<a href ="#power-attack" >Power Attack</a>
-<a href ="#improved-overrun" >Improved Overrun</a>, base attack bonus +6
-<a href ="#power-attack" >Power Attack</a>
-<a href ="#improved-sunder" >Improved Sunder</a>, base attack bonus +6
-Base attack bonus +1
-Weapon proficiency (crossbow)
-No Prerequisites
-Cha 13, channel energy class feature
-No Prerequisites
-No Prerequisites
-<a href ="#shield-proficiency" >Shield Proficiency</a>
-<a href ="#improved-shield-bash" >Improved Shield Bash</a>, <a href ="#two-weapon-fighting" >Two-Weapon Fighting</a>, base attack bonus +6
-<a href ="#shield-slam" >Shield Slam</a>, base attack bonus +11
-<a href ="#shield-proficiency" >Shield Proficiency</a>, base attack bonus +1
-<a href ="#shield-focus" >Shield Focus</a>, 8th-level fighter
-<a href ="#shield-proficiency" >Shield Proficiency</a>
-No Prerequisites
-No Prerequisites
-No Prerequisites
-<a href ="#spell-focus" >Spell Focus</a>
-1st-level Wizard
-No Prerequisites
-<a href ="#spell-penetration" >Spell Penetration</a>
-No Prerequisites
-Base attack bonus +1
-Base attack bonus +11
-No Prerequisites
-No Prerequisites
-Channel positive energy class feature
-<a href="gettingStarted.html#dexterity" >Dex</a> 15
-<a href ="#two-weapon-fighting" >Two-Weapon Fighting</a>
-<a href ="#double-slice" >Double Slice</a>, Improved Two-Weapon Fighting, base attack bonus +11
-<a href="gettingStarted.html#dexterity" >Dex</a> 17, <a href ="#two-weapon-fighting" >Two-Weapon Fighting</a>, base attack bonus +6
-<a href="gettingStarted.html#dexterity" >Dex</a> 19, <a href ="#improved-two-weapon-fighting" >Improved Two-Weapon Fighting</a>, base attack bonus +11
-<a href ="#two-weapon-fighting" >Two-Weapon Fighting</a>
-Base attack bonus +6
-<a href ="#vital-strike" >Vital Strike</a>, base attack bonus +11
-<a href ="#improved-vital-strike" >Improved Vital Strike</a>, base attack bonus +16
-No Prerequisites
-Proficiency with weapon, base attack bonus +1
-<a href ="#weapon-focus" >Weapon Focus</a>
-<a href ="#dazzling-display" >Dazzling Display</a>, base attack bonus +6
-<a href ="#greater-weapon-focus" >Greater Weapon Focus</a>, <a href ="#shatter-defenses" >Shatter Defenses</a>, base attack bonus +11
-<a href ="#weapon-focus" >Weapon Focus</a>, 8th-level fighter
-<a href ="#weapon-focus" >Weapon Focus</a>, 12th-level fighter
-<a href ="#penetrating-strike" >Penetrating Strike</a>, 16th-level fighter
-<a href ="#weapon-focus" >Weapon Focus</a>, 4th-level fighter
-<a href ="#weapon-specialization" >Weapon Specialization</a>, 12th-level fighter
-Caster level 3rd
-Caster level 5th
-Caster level 9th
-Caster level 11th
-Caster level 5th
-Caster level 3rd
-Caster level 7th
-Caster level 1st
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-Arcane spellcaster, caster level 10th
-Arcane spellcaster, caster level 10th
-Cha 10; elf, half-elf, or gnome
+Arcane spellcaster
+Arcane spellcaster
+Cha 10; elf
 Wild shape class feature
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#shield-master" >Shield Master</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#two-weapon-fighting" >Two-Weapon Fighting</a>,  base attack bonus +11
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>, base attack bonus +6
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>
-<a href="#bodyguard" >Bodyguard</a>
-Dwarf, elf, or gnome; 100+ years old
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a>, base attack bonus +9
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-overrun" >Improved Overrun</a>, base attack bonus +1
-Cha 13, halfling
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#medusa-s-wrath" >Medusa's Wrath</a>, base attack bonus +14
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#mobility" >Mobility</a>,  base attack bonus +5
-1 rank in any <a href="/pathfinderRPG/prd/coreRulebook/skills/craft.html#craft" >Craft</a> skill, any item creation feat 
+Shield Master
+Power Attack
 No Prerequisites
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#shield-focus" >Shield Focus</a>, base attack bonus +6
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#critical-focus" >Critical Focus</a>, base attack bonus +13
-Dex 15, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#rapid-reload" >Rapid Reload</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#rapid-shot" >Rapid Shot</a>
-Sneak attack +5d6
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>, base attack bonus +11
-Con 13, monk level 11, drunken <i>ki</i> class feature
-Darkvision 60 feet
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-disarm" >Improved Disarm</a>, base attack bonus +9
-Dex 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, 6th-level fighter
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#spell-focus" >Spell Focus</a> (divination)
-Wis 13, keen senses racial trait
-Human
-Str 15, natural weapons, base attack bonus +6
-Con 13, Wis 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-unarmed-strike" >Improved Unarmed Strike</a>,  base attack bonus +8
 No Prerequisites
-<a href="#elemental-focus" >Elemental Focus</a>
-Elf
-<a href="/pathfinderRPG/prd/coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> 1 rank
-Caster level 1st, see feat
-Bomb class feature
-Discovery class feature
-Hex class feature
-Rage power class feature
-Revelation class feature
-Rogue talent class feature
-Con 18, drunken <i>ki</i> class feature
-Con 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#diehard" >Diehard</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#endurance" >Endurance</a>
-Favored enemy class feature
-Con 13; dwarf, half-orc, or orc
-Int 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#precise-shot" >Precise Shot</a>
-Dex 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#step-up" >Step Up</a>
-<a href="#following-step" >Following Step</a>, base attack bonus +6
-Str 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>, base attack bonus +1
-Str 15, <a href="#furious-focus" >Furious Focus</a>, base attack bonus +11
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>
-Gang-Up, base attack bonus +6
-Cha 13, gnome, gnome magic racial trait
-Dex 13, Small size or smaller
-Cha 13, gnome, gnome magic racial trait
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#diehard" >Diehard</a>, base Fortitude save +8
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#diehard" >Diehard</a>, base Fortitude save +4
-<a href="/pathfinderRPG/prd/coreRulebook/skills/perception.html#perception" >Perception</a> 10 ranks, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#blind-fight" >Blind-Fight</a>
-<a href="/pathfinderRPG/prd/coreRulebook/skills/perception.html#perception" >Perception</a> 15 ranks, <a href="#improved-blind-fight" >Improved <a href="/pathfinderRPG/prd/coreRulebook/feats.html#blind-fight" >Blind-Fight</a></a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>
-<a href="#improved-dirty-trick" >Improved Dirty Trick</a>, base attack bonus +6
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>
-<a href="#improved-dra" >Improved Drag</a>, base attack bonus +6
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>
-<a href="#improved-reposition" >Improved Reposition</a>, base attack bonus +6
-<a href="/pathfinderRPG/prd/coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> 10 ranks, see feat
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>
-<a href="#improved-steal" >Improved Steal</a>, base attack bonus +6
-Wis 13, dwarf, stonecunning racial trait
-<a href="/pathfinderRPG/prd/coreRulebook/skills/perception.html#perception" >Perception</a> 10 ranks, Improved Stonecunning
-Con 13; dwarf, half-orc, or orc
-Con 13; dwarf, half-orc, or orc
-Wis 13, half-orc or orc
-<a href="#keen-scent" >Keen Scent</a>, half-orc or orc
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-trip" >Improved Trip</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-unarmed-strike" >Improved Unarmed Strike</a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a>, <a href="#ki-throw" >Ki Throw</a>
-Cha 13, bardic performance, elf or half-elf
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#acrobatic-steps" >Acrobatic Steps</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#nimble-moves" >Nimble Moves</a>, elf
-Bardic performance class ability
-Dex 13, Small size or smaller
-Halfling
-<a href="/pathfinderRPG/prd/coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) 5 ranks
-Cast 4th-level spells
-<a href="#minor-spell-expertise" >Minor Spell Expertise</a>, cast 9th-level spells
-Dex 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#shield-focus" >Shield Focus</a>
-Dex 15, <a href="#missile-shield" >Missile Shield</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#spellbreaker" >Spellbreaker</a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#mounted-combat" >Mounted Combat</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#shield-focus" >Shield Focus</a>
-<a href="/pathfinderRPG/prd/coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> 15 ranks, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-counterspell" >Improved Counterspell</a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#shot-on-the-run" >Shot on the Run</a>, base attack bonus +6
-Half-elf, half-orc, or halfling
-Dex 13, Wis 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-unarmed-strike" >Improved Unarmed Strike</a>,  base attack bonus +8
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#weapon-specialization" >Weapon Specialization</a> with a ranged weapon
-Tactician class feature
-<a href="/pathfinderRPG/prd/coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> 5 ranks, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#heighten-spell" >Heighten Spell</a>
-Con 13, Wis 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-unarmed-strike" >Improved Unarmed Strike</a>, base attack bonus +8
-Str 15, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>, base attack bonus +1
-Human
-Con 15, rage class feature
-Half-orc
-Str 13, two claw attacks, base attack bonus +6
-<a href="#improved-reposition">Improved Repostion</a>, base attack bonus +9
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#shield-proficiency" >Shield Proficiency</a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>, base attack bonus +6
-<a href="#second-chance" >Second Chance</a>, base attack bonus +11
-Base attack bonus +1
-Wis 13, half-elf
-Keen senses racial trait
-Str 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>, base attack bonus +1
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#shield-focus" >Shield Focus</a>, 4th-level fighter
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#greater-shield-focus" >Greater Shield Focus</a>, <a href="#shield-specialization" >Shield Specialization</a>,  12th-level fighter
-Dex 13, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#dodge" >Dodge</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#mobility" >Mobility</a>
-Dex 15, <a href="#sidestep" >Sidestep</a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>, half-orc
-Cha 13, half-elf
-<a href="/pathfinderRPG/prd/coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> 15 ranks, 3 metamagic feats
-<a href="/pathfinderRPG/prd/coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> 6 ranks, <a href="/pathfinderRPG/prd/coreRulebook/skills/climb.html#climb" >Climb</a> 6 ranks,  6th-level monk
-<a href="#spider-step" >Spider Step</a>, 12th-level monk
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#rapid-shot" >Rapid Shot</a>, elf
-Dwarf, hardy racial trait
 Dwarf
-Cha 13, bardic performance, dwarf
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#power-attack" >Power Attack</a>, base attack bonus +16
-Eidolon class feature
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-sunder" >Improved Sunder</a>, base attack bonus +9
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>, base attack bonus +6
-Cha 13, Small size or smaller
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#disruptive" >Disruptive</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#spellbreaker" >Spellbreaker</a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#spell-focus" >Spell Focus</a> (transmutation)
-Wis 18, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-unarmed-strike" >Improved Unarmed Strike</a>, base attack bonus +8
-<a href="/pathfinderRPG/prd/coreRulebook/skills/ride.html#ride" >Ride</a> rank 9, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#mounted-combat" >Mounted Combat</a>
-<a href="/pathfinderRPG/prd/coreRulebook/skills/ride.html#ride" >Ride</a> rank 14, <a href="#trick-ridin" >Trick Riding</a>
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#improved-trip" >Improved Trip</a>, base attack bonus +9
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#agile-maneuvers" >Agile Maneuvers</a>, Small size or smaller
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#dodge" >Dodge</a>, <a href="/pathfinderRPG/prd/coreRulebook/feats.html#mobility" >Mobility</a>, Small size or smaller
-Wild empathy class feature
-Cha 13, bardic performance, half-orc or orc
-Halfling
+Improved Bull Rush
+Improved Overrun
+Cha 13
+Medusa's Wrath
+Mobility
+1 rank in any Craft skill
 No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-<a href="/pathfinderRPG/prd/coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> 10 ranks
-No Prerequisites
-No Prerequisites
-Caster level 1st
-No Prerequisites
-No Prerequisites
-No Prerequisites
-No Prerequisites
-Base attack bonus +4
-No Prerequisites
-Dex 13, base attack bonus +1
-<a href="/pathfinderRPG/prd/coreRulebook/feats.html#shield-proficiency" >Shield Proficiency</a>
-No Prerequisites
-No Prerequisites
+Shield Focus
+base attack bonus +13
+Dex 15
+Sneak attack +5d6
+Power Attack
+Con 13
+Darkvision 60 feet
+base attack bonus +9
+Dex 13
+Spell Focus (divination)
+Wis 13
+Human
+Str 15
 Aberrant bloodline
-Int 13, 1 rank in at least one <a href="/pathfinderRPG/prd/coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill, no levels in a class that has inspiration
-Amateur Investigator, base attack bonus +6
-Int 14, Studied Combatant, base attack bonus +8
+Int 13
+base attack bonus +6
+Int 14
 No levels in a class that has panache
 Animal companion or mount class feature
-Dodge, Mobility; base attack bonus +7, brawler level 4th, or monk level 4th
-Anticipate Dodge
+Dodge
+No Prerequisites
 Base attack bonus +4
-Cha 13; base attack bonus +5 or <a href="/pathfinderRPG/prd/coreRulebook/skills/perform.html#perform">Perform</a> (act, oratory, or sing) 5 ranks
-Dex 13, Wis 13, Improved Unarmed Strike, base attack bonus +8
-Wis 13, alignment must be within one step of your deity's
-Believer's Boon, must be lawful good
-Base attack bonus +7, ability to cast 2nd-level bloodrager spells, bloodrage class feature
-Base attack bonus +11, ability to cast divine spells, alignment must be within one step of your deity's
-Arcane Strike, bloodrage class feature
+Cha 13; base attack bonus +5 or Perform (act
+Dex 13
+Wis 13
+must be lawful good
+Base attack bonus +7
+Base attack bonus +11
+bloodrage class feature
 Minor magic rogue talent
-Dodge, Mobility, <a href="/pathfinderRPG/prd/coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> 5 ranks
-Blessings class feature, channel energy class feature
-Ability to cast one force spell, channel energy class feature
-Dex 18, Combat Reflexes, Improved Unarmed Strike, Weapon Focus (unarmed strike), base attack bonus +16 or brawler level 12th
-Dex 13, Wis 13, Improved Unarmed Strike, base attack bonus +4
-Disable Device 5 ranks, <a href="/pathfinderRPG/prd/coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> 5 ranks, trapfinding
-Dazzling Display, Weapon Focus, base attack bonus +6, proficiency with selected weapon
-Cha 13, <a href="/pathfinderRPG/prd/coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) 5 ranks
-Dex 13, Wis 13, Improved Unarmed Strike, base attack bonus +8
-Two-Weapon Fighting; divine bond (weapon) or sacred weapon class feature
-Channel energy class feature; Air, Earth, Fire, or Water domain or blessing
-Skill Focus (<a href="/pathfinderRPG/prd/coreRulebook/skills/linguistics.html#linguistics">Linguistics</a>)
-Cha 13, animal companion class feature
-Augmented Summoning, Spell Focus (conjuration), ability to cast <em>summon monster I</em>
-Arcanist level 1st
-Animal focus class feature
-Arcanist exploit class feature
-Channel energy class feature
-Hex class feature
-Amateur Investigator or inspiration class feature
-Investigator talent class feature
-Martial flexibility class feature
-Arcane reservoir class feature
-Slayer talent class feature
-Ability to cast spells
-Nature Magic or the ability to cast druid or ranger spells; Vital Strike, <a href="/pathfinderRPG/prd/coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) 5 ranks
-Wandering hex class feature
-Spell Mastery, wizard level 1st
-Flexible Wizardry, wizard level 8th
-Inspiration class feature, keen recollection class feature
-Base attack bonus +3, ability to cast 2nd-level arcane spells, ability to cast at least one arcane force spell
-Spellcraft 5 ranks, keen recollection class feature
-Nature Magic or the ability to cast druid or ranger spells; Vital Strike
-Intimidating Prowess, Killing Flourish, <a href="/pathfinderRPG/prd/coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> 11 ranks, slayer level 11th
-Str 13; <a href="/pathfinderRPG/prd/bestiary/monsterFeats.html#awesome-blow">Awesome Blow</a> or awesome blow class feature; Power Attack
-Ability to perform dirge of doom
-Improved Dirge of Doom, ability to perform dirge of doom
-Poison use class feature, studied strike +4d6
-Ability to create 2nd-level extracts, alchemy class feature, inspiration class feature
-Ability to perform dirge of doom
-Inspiration and studied combat class features
-Ability to start performances or raging song as move action, bardic performance or raging song class feature
-Dex 12, Acrobatic, <a href="/pathfinderRPG/prd/coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> 1 rank, slayer level 1st or swashbuckler level 1st
-Intimidating Prowess, <a href="/pathfinderRPG/prd/coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> 4 ranks, slayer level 4th
-Animal focus class feature, wild empathy class feature
-Spellcraft 6 ranks
-Cha 13; draconic or elemental bloodline
-Dastardly Finish, sneak attack +5d6, studied target class feature
-Knowledge (nature) 1 rank
-Skill Focus (<a href="/pathfinderRPG/prd/coreRulebook/skills/linguistics.html#linguistics">Linguistics</a>)
-Dex 13, Wis 13, Improved Unarmed Strike, base attack bonus +14
-Access to blessing's major power, blessings class feature
-Blood casting class feature
-Ability to cast 4th-level bloodrager spells, bloodrage class feature
-Eldritch Heritage or sorcerer bloodline class feature
-Blood casting class feature
-Weapon Focus with chosen weapon, studied combat class feature
-Quick Channel or Quicken Spell; channel energy or lay on hands class feature
-Power Attack; rage or raging song class feature
-Rage or raging song class feature
-Divine bond (armor or shield) or sacred armor class feature
-Arcane Strike
-Studied target class feature
-Seething Hatred, sneak attack +3d6, studied target class feature
-Opportune parry and riposte deed
-Stealth 12 ranks, assassinate advanced slayer talent or ninja master trick
-Raging song class feature
-Skald's Vigor, <a href="/pathfinderRPG/prd/coreRulebook/skills/perform.html#perform">Perform</a> (sing) 10 ranks
-Rage class feature
-Dex 13, Weapon Finesse, Weapon Focus with selected weapon
-Dex 15, Acrobatic or slayer level 1st, Combat Expertise, <a href="/pathfinderRPG/prd/coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> 1 rank
-Acrobatics 5 ranks or slow fall class feature
-Hex class feature; shaman level 6th or witch level 6th
-Ability to acquire an animal companion or a familiar
-Ability to cast <em>spiritual weapon</em> or <em>spiritual ally</em>, spirit magic class feature
-Knowledge (nature) 5 ranks, ability to spontaneously cast cure or inflict spells, Animal or Plant domain
-Dex 13, Wis 13, Improved Unarmed Strike, base attack bonus +2
-Knowledge (nature) 3 ranks, <a href="/pathfinderRPG/prd/coreRulebook/skills/survival.html#survival">Survival</a> 3 ranks, no levels in a class that has the animal focus class feature
-No Prerequisites
-Raging song class feature
-Combat Expertise; sneak attack +3d6 or studied strike +3d6
-Major magic rogue talent, minor magic rogue talent
+Dodge
+Blessings class feature
+Ability to cast one force spell
+Dex 18
+Dex 13
+Disable Device 5 ranks
+Dazzling Display
 Cha 13
-Evasion
-Ride 1 rank
-Caster level 5th, ability to acquire a familiar
-Mystery or domain class feature
-Weapon Focus with deity's favored weapon, worship and receive spells from a deity
-Weapon of the Chosen
-Improved Weapon of the Chosen
-Nature Magic or the ability to cast druid or ranger spells; Vital Strike, <a href="/pathfinderRPG/prd/coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) 5 ranks
-Amateur Swashbuckler or panache class feature; Canny Tumble, <a href="/pathfinderRPG/prd/coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> 7 ranks
-Amateur Swashbuckler or panache class feature; <a href="/pathfinderRPG/prd/coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> 2 ranks, <a href="/pathfinderRPG/prd/coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> 2 ranks
-Amateur Swashbuckler or panache class feature; Dodge, <a href="/pathfinderRPG/prd/coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> 1 rank
-Amateur Swashbuckler or panache class feature
-Amateur Swashbuckler or panache class feature; base attack bonus +3
-Improved Grapple; base attack bonus +6, brawler's flurry, or flurry of blows
-Grabbing Style; base attack bonus +8, brawler level 4th, or monk level 4th
-Grabbing Drag; base attack bonus +12, brawler level 8th, or monk level 8th
-Improved Unarmed Strike; base attack bonus +6, brawler's flurry class feature or flurry of blows class feature
-Dodge, Jabbing Style, Mobility; base attack bonus +9, monk level 5th, or brawler level 5th
-Power Attack, Jabbing Dancer; base attack bonus +12, monk level 8th, or brawler level 8th
-Improved Unarmed Strike, base attack bonus +6, brawler's flurry, or flurry of blows
-<a href="/pathfinderRPG/prd/advancedPlayersGuide/advancedFeats.html#improved-reposition">Improved Reposition</a>, Improved Trip, <a href="#pummeling-style">Pummeling Style</a>; base attack bonus +9, brawler level 5th, or monk level 5th
-<a href="#pummeling-style">Pummeling Style</a>; base attack bonus +12, brawler level 8th, or monk level 8th
-Point-Blank Shot
-No Prerequisites
-<a href="/pathfinderRPG/prd/advancedPlayersGuide/advancedFeats.html#duck-and-Cover">Duck and Cover</a>
-Ability to acquire an animal companion, an eidolon, a familiar, or a special mount
-<a href="/pathfinderRPG/prd/advancedPlayersGuide/advancedFeats.html#Swap-Places">Swap Places</a>
-No Prerequisites
-Int 13, Combat Expertise, ability to acquire an animal companion
-Ability to acquire an animal companion, an eidolon, a familiar, or a special mount
-<a href="/pathfinderRPG/prd/ultimateCombat/ultimateCombatFeats.html#broken-wing-gambit">Broken Wing Gambit, <a href="/pathfinderRPG/prd/coreRulebook/skills/bluff.html#bluff">Bluff</a> 5 ranks
+Dex 13
+Two-Weapon Fighting; divine bond (weapon) or sacred weapon class feature
+Channel energy class feature; Air
+Skill Focus (Linguistics)
+Cha 13
