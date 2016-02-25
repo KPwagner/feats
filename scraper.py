@@ -39,13 +39,14 @@ def get_next_feat(page):
 	if (display_name_start > 200 or display_name_end == -1 or len(display_name) > 50):
 		return None
 	reference_name = ''
-	reference_name = display_name.replace(',','').split()
+	reference_name = display_name.replace(",", '').split()
 	if len(reference_name) == 1:
 		reference_name = ''.join(reference_name).lower()
 	else:
 		first_word = reference_name[0].lower()
 		other_words = ''.join(reference_name[1:])
 		reference_name = first_word + other_words
+		reference_name = reference_name.replace("'", '')
 	page = page[display_name_end:]
 
 	feat_prerequisites = []

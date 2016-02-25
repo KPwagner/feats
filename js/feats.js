@@ -169,7 +169,7 @@ var feats = {
         "improvedSteal",
         "secondChance",
         "swiftAid",
-        "slayer'sFeint",
+        "slayersFeint",
         "packFlanking"
     ],
     "featPrerequisites": [],
@@ -787,7 +787,7 @@ var feats = {
 "scorpionStyle" : {
     "benefitsShort": "Reduce target's speed to 5 ft.",
     "buildsInto": [
-        "gorgon'sFist"
+        "gorgonsFist"
     ],
     "featPrerequisites": [
         "Improved Unarmed Strike"
@@ -795,10 +795,10 @@ var feats = {
     "name": "Scorpion Style",
     "nonFeatPrerequisites": []
 },
-"gorgon'sFist" : {
+"gorgonsFist" : {
     "benefitsShort": "Stagger a foe whose speed is reduced",
     "buildsInto": [
-        "medusa'sWrath"
+        "medusasWrath"
     ],
     "featPrerequisites": [
         "Scorpion Style"
@@ -808,7 +808,7 @@ var feats = {
         "base attack bonus +6"
     ]
 },
-"medusa'sWrath" : {
+"medusasWrath" : {
     "benefitsShort": "Make 2 extra attacks against a hindered foe",
     "buildsInto": [
         "cockatriceStrike"
@@ -1940,7 +1940,7 @@ var feats = {
 "bodyguard" : {
     "benefitsShort": "Use attack of opportunity to add a bonus to adjacent ally's AC",
     "buildsInto": [
-        "inHarm'sWay"
+        "inHarmsWay"
     ],
     "featPrerequisites": [
         "Combat Reflexes"
@@ -1948,7 +1948,7 @@ var feats = {
     "name": "Bodyguard",
     "nonFeatPrerequisites": []
 },
-"inHarm'sWay" : {
+"inHarmsWay" : {
     "benefitsShort": "Take the damage of a successful attack upon an adjacent ally",
     "buildsInto": [],
     "featPrerequisites": [
@@ -2139,7 +2139,7 @@ var feats = {
         "6th-level fighter"
     ]
 },
-"diviner'sDelving" : {
+"divinersDelving" : {
     "benefitsShort": "+2 bonus on caster level checks with divinations",
     "buildsInto": [],
     "featPrerequisites": [],
@@ -3176,7 +3176,7 @@ var feats = {
         "base attack bonus +16"
     ]
 },
-"summoner'sCall" : {
+"summonersCall" : {
     "benefitsShort": "Your eidolon gets a bonus when summoned",
     "buildsInto": [],
     "featPrerequisites": [],
@@ -3648,10 +3648,10 @@ var feats = {
         "base attack bonus +8"
     ]
 },
-"believer'sBoon" : {
+"believersBoon" : {
     "benefitsShort": "Gain the use of a 1st-level cleric domain ability",
     "buildsInto": [
-        "believer'sHands"
+        "believersHands"
     ],
     "featPrerequisites": [],
     "name": "Believer's Boon",
@@ -3660,7 +3660,7 @@ var feats = {
         "alignment must be within one step of your deity's"
     ]
 },
-"believer'sHands" : {
+"believersHands" : {
     "benefitsShort": "Use lay on hands once per day",
     "buildsInto": [],
     "featPrerequisites": [
@@ -3969,7 +3969,7 @@ var feats = {
         "Ability to cast spells"
     ]
 },
-"faerie'sStrike" : {
+"faeriesStrike" : {
     "benefitsShort": "Illuminate foes with Vital Strike",
     "buildsInto": [],
     "featPrerequisites": [],
@@ -4387,10 +4387,10 @@ var feats = {
         "assassinate advanced slayer talent or ninja master trick"
     ]
 },
-"skald'sVigor" : {
+"skaldsVigor" : {
     "benefitsShort": "Gain fast healing while raging and performing or performing raging song",
     "buildsInto": [
-        "greaterSkald'sVigor"
+        "greaterSkaldsVigor"
     ],
     "featPrerequisites": [],
     "name": "Skald's Vigor",
@@ -4398,7 +4398,7 @@ var feats = {
         "Raging song class feature"
     ]
 },
-"greaterSkald'sVigor" : {
+"greaterSkaldsVigor" : {
     "benefitsShort": "Allies share the fast healing of Skald's Vigor",
     "buildsInto": [],
     "featPrerequisites": [
@@ -4430,7 +4430,7 @@ var feats = {
         "Weapon Focus with selected weapon"
     ]
 },
-"slayer'sFeint" : {
+"slayersFeint" : {
     "benefitsShort": "Use Acrobatics instead of Bluff to feint",
     "buildsInto": [],
     "featPrerequisites": [
@@ -4461,7 +4461,7 @@ var feats = {
         "Hex class feature; shaman level 6th or witch level 6th"
     ]
 },
-"spirit'sGift" : {
+"spiritsGift" : {
     "benefitsShort": "Commune with a spirit to grant your animal companion or familiar a shaman spirit augmentation",
     "buildsInto": [],
     "featPrerequisites": [],
@@ -4480,7 +4480,7 @@ var feats = {
         "spirit magic class feature"
     ]
 },
-"spontaneousNature'sAlly" : {
+"spontaneousNaturesAlly" : {
     "benefitsShort": "Lose a spell slot to spontaneously cast a <em>summon nature's ally</em> spell of the same level",
     "buildsInto": [],
     "featPrerequisites": [],
@@ -4504,7 +4504,7 @@ var feats = {
         "base attack bonus +2"
     ]
 },
-"stalker'sFocus" : {
+"stalkersFocus" : {
     "benefitsShort": "Gain an animal focus for you or your animal companion",
     "buildsInto": [],
     "featPrerequisites": [],
@@ -4628,7 +4628,7 @@ var feats = {
     "name": "Greater Weapon of the Chosen",
     "nonFeatPrerequisites": []
 },
-"winter'sStrike" : {
+"wintersStrike" : {
     "benefitsShort": "Target of your Vital Strike must successfully save or become fatigued ",
     "buildsInto": [],
     "featPrerequisites": [],
